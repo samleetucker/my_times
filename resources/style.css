@@ -1,5 +1,5 @@
-  div {
-    border: 1px solid black;
+  body {
+  margin: 0;
   }
 
 /* Header  */
@@ -15,14 +15,14 @@
     border: 1px solid black;
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
   }
 
   .logo {
-    flex: 1;
     padding-left: 30px;
     display: flex;
     align-items: center;
+    flex: 1;
   }
 
   .logo span {
@@ -41,6 +41,7 @@
 
   nav span {
     padding: 20px 10px;
+    display: inline-block;
   }
 
   header nav {
@@ -50,10 +51,9 @@
 /* Content */
 
   .main-content-container {
-    width: 1232px;
-    padding-top: 150px;
-    margin: 0 auto 78px auto;
     display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
   }
 
   .column {
@@ -63,16 +63,111 @@
   }
 
   .column.large {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: 630px;
+    display: flex;
   }
 
   .column.medium {
-    background-color: coral;
+    /* background-color: coral; */
     width: 300px;
+    display: flex;
   }
 
   .column.small {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     width: 240px;
+  }
+
+  .image-headline {
+    height: 300px;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feature .image-headline {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  text-align: left;
+  }
+
+  .main-stories {
+    display: flex;
+    margin-top: 17px;
+    justify-content: space-between;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .text {
+    font-family: Georgia;
+    font-size: 17px;
+    color: black;
+    height: 250px;
+  }
+
+  .bites h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .bite {
+    display: block;
+    text-align: center;
+    background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    color: DimGray;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    padding: 11px 20px;
+  }
+
+  .tuna {
+    background-image: url('img-story-main.png');
+  }
+
+  .fall {
+    background-image: url('img-story-2.png');
+  }
+
+  .camera {
+    background-image: url('img-story-3.png');
+  }
+
+  .cats {
+    background-image: url('img-story-1.png');
+  }
+
+  .footer {
+    height: 300px;
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .myt {
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
   }
